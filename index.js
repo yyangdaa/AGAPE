@@ -37,20 +37,3 @@
       alterStyles(isBackToTopRendered);
     }
   });
-
-  window.addEventListener("DOMContentLoaded", function(){
-    var dynamicText = document.getElementById("dynamic-text");
-    var text = ['I am a software developer', 'I am a student', 'I am an entrepreneur'];
-    var textIndex = 0;
-  
-    function updateText() {
-      dynamicText.classList.remove('scrolling'); // Reset animation
-      dynamicText.innerText = text[textIndex];
-      dynamicText.classList.add('scrolling'); // Start animation
-      textIndex = (textIndex + 1) % text.length; // Move to the next index, loop back to 0 at the end
-    }
-  
-    setInterval(updateText, 2000);
-    updateText(); // Initial text setup
-  });
-  
