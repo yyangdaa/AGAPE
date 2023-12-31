@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+.header, .footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.donation-section {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+h1, p {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="number"],
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.form-group textarea {
+    height: 100px;
+}
+
+.donate-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+.donate-button:hover {
+    background: #555
+}
+
+/* PayPal Button Specific Styles */
+#paypal-button-container {
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}
